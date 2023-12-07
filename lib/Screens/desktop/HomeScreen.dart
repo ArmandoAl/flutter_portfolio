@@ -21,9 +21,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      padding: EdgeInsets.symmetric(
-          horizontal: MediaQuery.of(context).size.width * 0.10,
-          vertical: MediaQuery.of(context).size.width * 0.15),
+      padding: EdgeInsets.only(
+          left: MediaQuery.of(context).size.width * 0.1,
+          right: MediaQuery.of(context).size.width * 0.1,
+          top: MediaQuery.of(context).size.height * 0.15,
+          bottom: MediaQuery.of(context).size.height * 0.05),
       decoration: const BoxDecoration(
         //put this color F5F5F5
         color: Color(0xFFf5f5f5),
