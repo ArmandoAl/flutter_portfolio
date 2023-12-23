@@ -173,8 +173,8 @@ class _ProjectsWidgetState extends State<ProjectsWidget> {
                                 ),
                                 Text(
                                   uiProvider.isSpanish
-                                      ? projects[i]['description']!
-                                      : projects[i]['englishDescription']!,
+                                      ? projects[i + 1]['description']!
+                                      : projects[i + 1]['englishDescription']!,
                                   style: TextStyle(
                                     decoration: TextDecoration.none,
                                     color: const Color.fromARGB(

@@ -74,6 +74,21 @@ class _HerNotesScreenState extends State<HerNotesScreen> {
                     ElevatedButton(
                       onPressed: () async {
                         // Respond to button press
+                        String url = "https://hernotes.web.app/";
+                        if (await canLaunch(url)) {
+                          launch(url);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
+                      },
+                      child: const Text('Try it'),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    ElevatedButton(
+                      onPressed: () async {
+                        // Respond to button press
                         String url = "https://github.com/ArmandoAl/HerNotes";
                         if (await canLaunch(url)) {
                           launch(url);
